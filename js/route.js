@@ -93,7 +93,7 @@
             this.routerMap = config ? config.routes : this.routerMap
             this.routerViewId = config ? config.routerViewId : this.routerViewId
             this.stackPages = config ? config.stackPages : this.stackPages
-            var name = document.querySelector('#routerView').getAttribute('data-animationName')
+            var name = document.querySelector(this.routerViewId).getAttribute('data-animationName')
             if (name) {
                 this.animationName = name
             }
